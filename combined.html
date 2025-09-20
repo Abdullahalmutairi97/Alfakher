@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    
+    <script>
+        $(document).ready(function(){
+            $('#claimDiscountBtn').click(function(){
+                var userConfirmed = confirm("Do you want to go to another page and claim your 10% discount coupon?");
+                if (userConfirmed) {
+                
+                    window.location.href = 'Coupons.html';
+                }
+            });
+        });
+    </script>
+    
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.jpeg"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="combined.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="Contact us.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="combined.html"><img src="images/cart.png" width="40px" height="40px"></a>
+                <button id="claimDiscountBtn" style="max-width: 100px; padding: 10px 20px; font-size: 16px; color: #F0E68C; 
+                background-color: #090808; border: none; cursor: pointer;">
+                 10% Discount</button>
+            </div>
+            <div class="row"></div>
+        </div>
+    </div>
+
+    
+            <div class="small-container">
+                <h2>All Products</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/product-1.jpg" style="border:2px solid black" >
+                        <h4>Black & Gold - Farwah Bisht</h4>
+                        <p>SAR 250.00</p>
+                        <button class="btn-add-to-cart" onclick="addToCart('Black & Gold - Farwah Bisht', 250.00)">Add to Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/product-2.jpg" style="border:2px solid black">
+                        <h4>Men Rojieso - Shose</h4>
+                        <p>SAR 180.00</p>
+                        <button class="btn-add-to-cart" onclick="addToCart('Men Rojieso - Shose', 180.00)">Add to Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/product-3.jpg" style="border:2px solid black">
+                        <h4>Men Sokari - Thobes</h4>
+                        <p>SAR 250.00</p>
+                        <button class="btn-add-to-cart" onclick="addToCart('Men Sokari - Thobes', 250.00)">Add to Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/product-4.jpg" style="border:2px solid black">
+                        <h4>Men Glab - Thobes</h4>
+                        <p>SAR 180.00</p>
+                        <button class="btn-add-to-cart" onclick="addToCart('Men Glab - Thobes', 180.00)">Add to Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/product-5.jpg" style="border:2px solid black">
+                        <h4>Arabic Zubayri - Shose</h4>
+                        <p>SAR 170.00</p>
+                        <button class="btn-add-to-cart" onclick="addToCart('Arabic Shose - Zubayri', 170.00)">Add to Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/product-6.jpg" style="border:2px solid black">
+                        <h4>Men Sada - Thobes</h4>
+                        <p>SAR 110.00</p>
+                        <button class="btn-add-to-cart" onclick="addToCart('Men Sada - Thobes', 110.00)">Add to Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/product-7.jpg" style="border:2px solid black">
+                        <h4>Men Off White - Thobes</h4>
+                        <p>SAR 210.00</p>
+                        <button class="btn-add-to-cart" onclick="addToCart('Men Off White - Thobes', 210.00)">Add to Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/1.jpg" style="border:2px solid black">
+                        <h4>Black Technos - Watch</h4>
+                        <p>SAR 200.00</p>
+                        <button class="btn-add-to-cart" onclick="addToCart('Black Technos - Watch', 200.00)">Add to Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/5.jpg" style="border:2px solid black">
+                        <h4>Black Sport - Watch</h4>
+                        <p>SAR 230.00</p>
+                        <button class="btn-add-to-cart" onclick="addToCart('Black Sport - Watch', 230.00)">Add to Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/4.jpg" style="border:2px solid black">
+                        <h4>Men Aodatu - Shose</h4>
+                        <p>SAR 140.00</p>
+                        <button class="btn-add-to-cart" onclick="addToCart('Men Aodatu - Shose', 140.00)">Add to Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/2.jpg" style="border:2px solid black">
+                        <h4>Men Tuxedo - Shose</h4>
+                        <p>SAR 150.00</p>
+                        <button class="btn-add-to-cart" onclick="addToCart('Men Tuxedo - Shose', 150.00)">Add to Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/bs.jpg" style="border:2px solid black">
+                        <h4>Men Veslexth - Shose</h4>
+                        <p>SAR 100.00</p>
+                        <button class="btn-add-to-cart" onclick="addToCart('Men Veslexth - Shose', 100.00)">Add to Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/6.jpg" style="border:2px solid black">
+                        <h4>Versace - Perfume</h4>
+                        <p>SAR 200.00</p>
+                        <button class="btn-add-to-cart" onclick="addToCart('Versace - Perfume', 200.00)">Add to Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/f1.jpg" style="border:2px solid black">
+                        <h4>Men White - Fabrics</h4>
+                        <p>SAR 100.00</p>
+                        <button class="btn-add-to-cart" onclick="addToCart('Men White - Fabrics', 100.00)">Add to Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/f2.jpg" style="border:2px solid black">
+                        <h4>Men D Blue - Fabrics</h4>
+                        <p>SAR 110.00</p>
+                        <button class="btn-add-to-cart" onclick="addToCart('Men D Blue - Fabrics', 110.00)">Add to Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/f3.jpg" style="border:2px solid black">
+                        <h4>Men Gray - Fabrics</h4>
+                        <p>SAR 105.00</p>
+                        <button class="btn-add-to-cart" onclick="addToCart('Men Gray - Fabrics', 105.00)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="small-container cart-page">
+        <h2>Cart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="cartItems">
+            </tbody>
+        </table>
+        
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td id="total-subtotal">SAR 0</td>
+                </tr>
+                <tr>
+                    <td>Tax (15%)</td>
+                    <td id="total-tax">SAR 0</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="total-overall">SAR 0</td>
+                </tr>
+            </table>
+        </div>
+        <div class="total-price">
+            <a href="#" class="btn">Proceed to checkout &#8594;</a>
+        </div>
+    </div>
+
+<!----------Footer---------------> 
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                   <h3>Download Our App</h3>
+                   <p style="color: #F0E68C;">Download our App for Android and ios.</p>
+                   <div class="app-logo">
+                    <a href="https://www.googleplay.com/" target="_blank"><img src="images/play-store.png" ></a>
+                    <a href="https://www.apple.com/app-store/" target="_blank"><img src="images/app-store.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <a href="index.html"><img src="images/logo.jpeg"></a>
+                    <p style="color: #F0E68C;">To know more about us,</p>
+                    <a href="about.html"><p style="color: #F0E68C;">please go the the about us page</p></a>
+                </div>
+                <div class="footer-col3">
+                   <h3>Useful Links</h3>
+                    <ul>
+                        <a href="Coupons.html"><li>Coupons</li></a>
+                        <li>Deals</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                   <h3>Follow Us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com/"target="_blank"><li>Facebook</li></a>
+                        <a href="https://twitter.com/"target="_blank"><li>Twitter<li></a>
+                        <a href="https://www.instagram.com/"target="_blank"><li>Instagram</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"> Copyright © Alfakher All Rights Reserved.</p>
+        </div>
+        
+    </div>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+
+    
+    <script>
+        $(document).ready(function(){
+            $('#claimDiscountBtn').click(function(){
+                var userConfirmed = confirm("Do you want to go to another page and claim your 10% discount coupon?");
+                if (userConfirmed) {
+                    window.location.href = 'Coupons.html';
+                }
+            });
+        });
+    </script>
+
+    <div class="header">
+       <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                <a href="index.html"><img src="images/logo.jpeg"></a>
+            </div>
+              <nav>
+               <ul id="MenuItems">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="combined.html">Products</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="Contact us.html">Contact</a></li>
+                   <li><a href="account.html">Account</a></li>
+               </ul>
+              </nav>
+              <a href="combined.html"><img src="images/cart.png" width="40px" height="40px"></a>
+              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+              
+              <button id="claimDiscountBtn" style="max-width: 100px; padding: 10px 20px; font-size: 16px; color: #F0E68C; 
+                background-color: #090808; border: none; cursor: pointer;">
+                 10% Discount</button>
+
+          </div>
+          <div class="row"></div>
+        </div>
+       </div>
+       
+
+<div class="accout-page">
+    <div class="container">
+  
+       <div class="row">
+          
+           <div class="col-2">
+              <div class="form-container">
+                 <div class="form-btn">
+                     <span onclick="login()">Login</span>
+                     <span onclick="register()">Register</span>
+                     <hr id="indicator">
+                 </div>
+                 
+               <form id="LoginForm">
+                   <input type="text" placeholder="username">
+                   <input type="password" placeholder="Password">
+                   <button type="submit" class="btn">Login</button>
+                   <a href="">Forgot password</a>
+               </form>
+
+               <form id="RegForm">
+                   <input type="text" placeholder="username">
+                   <input type="email" placeholder="Email">
+                   <input type="password" placeholder="Password">
+                   <button type="submit" class="btn">Register</button>
+               </form>
+              </div>
+           </div>
+       </div>
+</div>
+</div>
+
+<!----------Footer---------------> 
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+               <h3>Download Our App</h3>
+                <p style="color: #F0E68C;">Download our App for Android and ios.</p>
+                <div class="app-logo">
+                    <a href="https://www.googleplay.com/" target="_blank"><img src="images/play-store.png" ></a>
+                    <a href="https://www.apple.com/app-store/" target="_blank"><img src="images/app-store.png"></a>
+                </div>
+            </div>
+            <div class="footer-col2">
+                <a href="index.html"><img src="images/logo.jpeg"></a>
+               <p style="color: #F0E68C;">To know more about us,</p>
+               <a href="about.html"><p style="color: #F0E68C;">please go the the about us page</p></a>
+            </div>
+            <div class="footer-col3">
+               <h3>Useful Links</h3>
+                <ul>
+                    <a href="Coupons.html"><li>Coupons</li></a>
+                    <li>Deals</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+               <h3>Follow Us</h3>
+                <ul>
+                    <a href="https://www.facebook.com/"target="_blank"><li>Facebook</li></a>
+                    <a href="https://twitter.com/"target="_blank"><li>Twitter<li></a>
+                    <a href="https://www.instagram.com/"target="_blank"><li>Instagram</li></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright" style="color: #fff;" > Copyright © Alfakher All Rights Reserved.</p>
+    </div>
+    
+</div>
+
+    
+    
+</body>
+</html>
+
